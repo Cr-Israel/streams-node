@@ -3,6 +3,9 @@
 ### GET
 GET {{url}}/users HTTP/1.1
 
+### GET with Query Parameters
+GET {{url}}/users?search=carlos HTTP/1.1
+
 ### POST
 POST {{url}}/users HTTP/1.1
 Content-Type: application/json
@@ -11,3 +14,15 @@ Content-Type: application/json
   "name": "Carlos",
   "email": "carlos@email.com"
 }
+
+### PUT
+PUT {{url}}/users/39b1e764-e507-4939-9f50-5d3f6a6f99de HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Feio",
+  "email": "john@doe.com"
+}
+
+### DELETE
+DELETE {{url}}/users/c746fcbb-1c92-4bbc-b43a-74ebf2b4c858 HTTP/1.1
